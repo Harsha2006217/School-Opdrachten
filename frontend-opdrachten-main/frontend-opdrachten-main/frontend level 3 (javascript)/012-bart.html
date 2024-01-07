@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const studentCijfer = [10,5,7,8,3,2];
+        let gemiddelde = 0;
+        let totaal = 0;
+      
+       for(cijfer of studentCijfer){
+        totaal = totaal + cijfer;
+       }
+       
+       gemiddelde = totaal / studentCijfer.length;
+      
+       if(gemiddelde >= 5.5){
+        console.log("gefeliciteerd, je hebt een voldoende gehaald!");
+       } else {
+        console.log("helaas, je hebt geen voldoende gehaald!");
+       }
+       console.log(gemiddelde);
+       studentCijfer.push(6, 1, 9);
+       for(cijfer of studentCijfer){
+        totaal = totaal + cijfer;
+       }
+       
+       gemiddelde = totaal / studentCijfer.length;
+      
+       if(gemiddelde >= 5.5){
+        console.log("gefeliciteerd, je hebt een voldoende gehaald!");
+       } else {
+        console.log("helaas, je hebt geen voldoende gehaald!");
+       }
+       console.log(gemiddelde);
+      </script>
+</body>
+</html>

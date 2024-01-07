@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        
+		
+const landenensteden=[["Italy", "milaan"], ["Luxemburg", "luxemburg "], ["Belgium", 'brussel'], ["Denmark", 'kopenhagen'], ["Finland", 'helsinki'], ["France", 'parijs'], ["Slovakia", 'bratislava'], ["Slovenia", 'ljubljana'], ["Germany", 'berlijn'], ["Greece", 'athene'], ["Ireland", 'dublin'], ["Netherlands", 'amsterdam'], ["Portugal", 'lissabon'], ["Spain", 'madrid'], ["Sweden", 'stockholm'], ["United Kingdom", 'londen'], ["Cyprus", 'nicosia'],["Lithuania", "vilnus"], ["Czech Republic", 'praag'], ["Estonia", 'tallinn'], ["Hungary", "boedapest"], ["Austria", 'wenen'], ["Poland", 'warschau']]      
+
+let count = prompt('hoe vaak wil je spelen?');
+let gespeeld = 0;
+let punten = 0;
+let text = ''
+
+if(sessionStorage.getItem("gespeeld") == null){
+    sessionStorage.setItem("gespeeld", gespeeld);
+    sessionStorage.setItem("score", punten);
+}
+
+function qText(){ 
+    for(x = 1; x<landenensteden.length; x++){
+        text += '\n' + landenensteden[x][1];
+    }
+
+    return text;
+    }          
+   
+function spel(){
+    let randomlandstad = landenensteden[Math.floor(Math.random() * landenensteden.length)];
+    let text = qText();
+    let vraag = prompt('welke hoofdstad van ' + randomlandstad[0] +'?' + text);
+    let score = sessionStorage.getItem("score", punten);
+
+    if (vraag == randomlandstad[1]){
+        alert("je had het goed!");
+        score++;
+    } else {
+        alert("je had het niet goed helaas");
+        score--;
+    }
+
+    sessionStorage.setItem("score", score);
+
+}
+
+for(i=0;i<count;i++){
+    spel();
+}
+
+numPlayed = parseInt(sessionStorage.getItem("gespeeld"));
+sessionStorage.setItem("gespeeld", parseInt(numPlayed) + parseInt(count));
+
+alert("aantal keer gespeeld: " + sessionStorage.getItem("gespeeld"));
+alert("aantal punten behaald " + sessionStorage.getItem("score"));
+alert("refresh om nog een keer te spelen")
+
+
+
+    </script>
+</body>
+</html>

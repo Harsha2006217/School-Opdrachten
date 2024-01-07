@@ -1,0 +1,8 @@
+INSERT INTO `telaat` (`id`, `naam`, `klas`, `telaat_min`, `reden`) VALUES (NULL, 'aron', '10c', '0', 'Komt nooit te laat!');
+DELETE FROM telaat WHERE `telaat`.`id` = 8"?
+
+
+
+
+
+1. Invoercontrole. Bij een nieuw te laat melding kan je verkeerde zaken invoeren, zoals bij minuten te laat een woord, of een negatief getal. Je kunt ook een naam invoeren van een student met een lengte langer dan in de database is toegstaan. Zorg ervoor dat er naar de gebruiker een nette melding komt als je iets verkeerds invoert.

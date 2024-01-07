@@ -1,0 +1,13 @@
+button{
+    background-color: red;
+}
+
+#weer{
+    display: block;
+    background-color: green;
+}
+
+
+.hidden{
+    visibility: hidden;
+}

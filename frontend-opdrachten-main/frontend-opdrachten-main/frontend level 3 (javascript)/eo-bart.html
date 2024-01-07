@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+const landen=[["Italy", "milaan"], ["Luxembourg", "luxemburg "], ["Belgium", 'brussel'], ["Denmark", 'kopenhagen'], ["Finland", 'helsinki'], ["France", 'parijs'], ["Slovakia", 'bratislava'], ["Slovenia", 'ljubljana'], ["Germany", 'berlijn'], ["Greece", 'athene'], ["Ireland", 'dublin'], ["Netherlands", 'amsterdam'], ["Portugal", 'lissabon'], ["Spain", 'madrid'], ["Sweden", 'stockholm'], ["United Kingdom", 'londen'], ["Cyprus", 'nicosia'],["Lithuania", "vilnus"], ["Czech Republic", 'praag'], ["Estonia", 'tallinn'], ["Hungary", "boedapest"], ["Austria", 'wenen'], ["Poland", 'warschau']]
+
+// Maak een functie die alle hoofdsteden returned -> gewenste output is: 'Amsterdam\n'
+function getCities(){
+    let text = ''   
+    for(x = 1; x<landen.length; x++){
+        text += '\n' + landen[x][1]
+        // console.log(landen[x])
+    }
+    return text
+}
+
+let i = 0;
+let aantalkeergoed = sessionStorage.setItem("aantalkeergoed", 0)
+let  aantalkeergespeeld = sessionStorage.setItem("aantalkeergespeeld", 0)
+
+test = sessionStorage.getItem("aantalkeergespeeld")
+console.log(parseInt(test))
+
+function guesser(){
+let randomland = landen[Math.floor(Math.random() * landen.length)]
+let guess = prompt('welke hoofdstad van ' + randomland[0] +'?' + getCities())
+
+if (guess == randomland[1]){
+    let opnieuw = prompt('je had het goed wil je opnieuw?')
+    
+    if (opnieuw == 'ja'){
+        sessionStorage.setItem("aantalkeergespeeld", aantalkeergespeeld += 1)
+
+        sessionStorage.setItem("aantalkeergoed", aantalkeergoed += 1)
+        
+        aantalkeergoed = sessionStorage.getItem("aantalkeergoed")
+        alert('je hebt het nu ' + aantalkeergoed +  ' goed')
+        }
+
+        
+    if (opnieuw != 'ja'){
+        i += 1
+        sessionStorage.setItem("aantalkeergoed", parseInt(aantalkeergoed) += 1)
+        aantalkeergoed = sessionStorage.getItem("aantalkeergoed")
+        let aantalkeergespeeld = sessionStorage.getItem("aantalkeergespeeld")
+        console.log(aantalkeergespeeld)
+        alert('je bent klaar je had er '+ aantalkeergoed + ' goed en je hebt dit spel ' + aantalkeergespeeld + " gespeeld");
+        
+    }
+
+
+    }
+    if (guess !== randomland[1]){
+        sessionStorage.setItem("aantalkeergespeeld", aantalkeergespeeld += 1)
+        let aantalkeergoed = sessionStorage.getItem("aantalkeergoed")
+        aantalkeergespeeld = sessionStorage.getItem("aantalkeergespeeld")
+        console.log(aantalkeergespeeld)
+        alert('je had het niet goed het goeie antwoord was '+  randomland[1])
+        alert('je hebt er nu ' + aantalkeergoed + ' goed en je hebt dit ' + aantalkeergespeeld + ' keer gespeeld' )
+    }
+}
+
+while (i == 0){
+    guesser()
+}
+</script>
+</body>
+</html>
+
+
+ 

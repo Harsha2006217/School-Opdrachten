@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleuren</title>
+
+    <style>
+        .blokken{
+            display:flex;
+            width:400px;
+            flex-direction:row;
+            justify-content:flex-start;
+            gap:10px;
+            margin:20px auto;
+        }
+
+        .blokken > div {
+            width:100px;
+            height:100px;
+            border:1px solid #000000;
+        }
+
+        .blok-1{
+            background-color:rgb(100, 150, 50);
+        }
+
+        .blok-2{
+            background-color: #ee3e70;
+        }
+
+        .blok-3{
+            background-color:hsla( 50, 75%, 50%, 1);
+        }
+
+        .blok-4{
+            background-color:rgba( 150, 71,  100, 1);
+        }
+
+    </style>
+</head>
+<body>
+    <section class="blokken">
+        <div class="blok-1"></div>
+        <div class="blok-2"></div>
+        <div class="blok-3"></div>
+        <div class="blok-4"></div>
+    </section>    
+</body>
+</html>

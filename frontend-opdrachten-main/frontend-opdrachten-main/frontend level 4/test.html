@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #blokje{
+  width:100px;
+  height:50px;
+  padding:20px;
+  background-color:pink;
+  text-align:center;
+}
+
+input{
+  width:400px;
+}
+  </style>
+</head>
+<body>
+<input type="text" onchange="colorIt('el')" placeholder="als je hier typt wordt ik anders..." id="el">
+
+<p><button onclick="myFunction();">Klik mij</button></p>
+
+<p><button onclick="changeText('info', 'bart');">Vertel mijn naam</button></p>
+<p id="info">Wat is jouw naam?</p>
+
+<div id="blokje" onmouseover="hoverIt('blue');">Maak mij anders!</div>
+
+<script>
+ //klik op de tab HTML om de HTML code te zien en eventueel aan te passen!
+
+function myFunction(){
+ alert(new Date())
+}
+
+function colorIt(par){
+  //verander de tekstkleur van el
+  ele = document.getElementById(par);
+  console.log(ele)
+  ele.style.color = "pink";
+}
+
+function changeText(id, text){
+ //verander de tekst met de id: info in jouw naam, gebruik voor de id en je naam de gegevens die je aan de functie hebt meegegeven, check ik de tab HTML of alles klopt...
+ document.getElementById(id).innerHTML = text;
+}
+
+function hoverIt(color){
+  //verander de achtergrond kleur van het blokje met de id: blokje, gebruik hiervoor de kleur die je aan de functie mee hebt gegeven
+  ele = document.getElementById("blokje");
+  ele.style.backgroundColor = color;
+}
+
+
+
+
+// myFunction()
+</script>
+</body>
+</html>

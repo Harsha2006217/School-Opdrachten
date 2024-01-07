@@ -1,0 +1,10 @@
+.alle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

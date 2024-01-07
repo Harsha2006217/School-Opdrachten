@@ -1,0 +1,109 @@
+.tabel{
+    display: inline-table;
+    text-align: center;
+    border: 6px solid blue;
+    font-family: 'Karla', sans-serif;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    background-color: whitesmoke;
+    box-shadow: 3px;
+}
+
+#klasgenoot{
+    font-family: 'Karla', sans-serif;
+    color: darkgreen;
+    background-color: black;
+}
+
+#hobby{
+    color: darkgreen;
+    background-color: black;
+}
+
+#none{
+    background-color: black;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.ul{
+    width: 5%;
+    height: 10%;
+    list-style: lower-roman;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    background-color: whitesmoke;
+}
+
+.ol{
+    width: 5%;
+    height: 10%;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    background-color: whitesmoke;
+}
+
+dl{
+    width: 10%;
+    height: 10%;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    background-color: whitesmoke;
+}
+
+p{
+    text-align: center;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-shadow: 10px red;
+}
+
+.centeralign{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+label{
+    padding: 5px;
+    width: 10%;
+    height: 5%;
+    border: 1px solid black;
+    border-bottom-left-radius: 10px 10px;
+    border-bottom-right-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px wheat;
+}
+
+fieldset{
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border: 6px groove red;
+    border-bottom-left-radius: 20px 10px;
+    border-bottom-right-radius: 20px 10px;
+    border-top-left-radius: 20px 10px;
+    border-top-right-radius: 20px 10px;
+    box-shadow: 1px 3px 10px black;
+    margin: auto;
+}

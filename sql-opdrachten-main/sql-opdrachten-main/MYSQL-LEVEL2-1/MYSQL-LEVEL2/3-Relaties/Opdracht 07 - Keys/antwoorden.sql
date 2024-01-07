@@ -1,0 +1,1 @@
+-- Leg in eigen woorden uit van een Primary en Foreign Key is

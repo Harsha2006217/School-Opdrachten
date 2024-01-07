@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="O14-BART.HTML" method="post">
+<fieldset> 
+    <legend>contactgegevens</legend>
+    <label>Naam:</label>
+    <input type="text" name="naam" size="10" placeholder="naam" required="required"><br />
+    <label>Leeftijd:</label>
+    <input type="number" size="10" placeholder="leeftijd" required="required"><br />
+    <label>E-mail</label>
+    <input type="email" size="10" placeholder="e-mail" required="required"><br />
+</fieldset> 
+
+<p><br></p>
+
+<fieldset>
+    <legend>Games:</legend>
+    <label>welke game vind je leuk?</label>
+    <select required="required">
+        <option value="valorant">valorant</option>
+        <option value="minecraft">minecraft</option>
+        <option value="cs go">cs go</option>
+        <option value="league of legends">league of legends</option>
+        <option value="fortnite">fortnite</option>
+    </select>
+    <label><br><br> je dat je deze game nog eens gaat spelen? <br><br></label>
+    <input type="radio" name="antwoorden" value="ja"> ja
+    <input type="radio" name="antwoorden" value="nee"> nee
+    <input type="radio" name="antwoorden" value="misschien"> misschien<br><br>
+
+    <label>waarom vond je dit een leuke game?:<br></label>
+    <textarea name="reden" cols="20" required="required">geef hier je mening</textarea>
+
+    <label><br> <br>wanneer heb je deze game voor het laatst gespeeld?:</label>
+    <input type="date" required="required">
+    <p></p>
+    <input type="checkbox">
+    <label>ik wil via de mail op de hoogte gehouden worden van nieuwe Games <br></label>
+    <input type="submit" value="recensie versturen">
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,30 @@
+ [
+    {
+        "questionText": "Wat is de hoofdstad van Frankrijk?",
+        "answerOptions": [
+            { "answerText": "New York", "isCorrect": "false" },
+            { "answerText": "London", "isCorrect": "false" },
+            { "answerText": "Paris", "isCorrect": "true" },
+            { "answerText": "Dublin", "isCorrect": "false" }
+        ]
+    },
+    {
+        "questionText": "Wie is de oprichter van Tesla?",
+        "answerOptions": [
+            { "answerText": "Jeff Bezos", "isCorrect": "false" },
+            { "answerText": "Elon Musk", "isCorrect": "true" },
+            { "answerText": "Bill Gates", "isCorrect": "false" },
+            { "answerText": "Tony Stark", "isCorrect": "false" }
+        ]
+    },
+    {
+        "questionText": "Welk bedrijf was eind jaren 90 bijna failliet?",
+        "answerOptions": [
+            { "answerText": "Apple", "isCorrect": "true" },
+            { "answerText": "Intel", "isCorrect": "false" },
+            { "answerText": "Amazon", "isCorrect": "false" },
+            { "answerText": "Microsoft", "isCorrect": "false" }
+        ]
+    }
+    
+]

@@ -1,0 +1,37 @@
+$voer = $voertuig1;
+if ($voertuig == 'bromscooter'){
+    
+    $voer->spanning = $_POST["bandenspanning"];
+    $voer->maximale_snelheid = 45;
+    $spanning = $voer->spanning / 100;
+    $tijd = ($spanning * $voer->maximale_snelheid) / 60;
+    $afstand = $_POST["afstand"] / $tijd+ $_POST["vertraging"]; 
+    
+}
+
+if ($voertuig == 'snorscooter'){
+    
+    $voer->spanning = $_POST["bandenspanning"];
+    $voer->maximale_snelheid = 25;
+    $spanning = $voer->spanning / 100;
+    $tijd = ($spanning * $voer->maximale_snelheid) / 60;
+    $afstand = $_POST["afstand"] / $tijd+ $_POST["vertraging"]; 
+    
+}
+
+if ($voertuig == 'fiets'){
+    
+    $voer->spanning = $_POST["bandenspanning"];
+    $voer->maximale_snelheid = 15;
+    $spanning = $voer->spanning / 100;
+    $tijd = ($spanning * $voer->maximale_snelheid) / 60;
+    $afstand = $_POST["afstand"] / $tijd+ $_POST["vertraging"];  
+}
+
+if ($voertuig == 'efiets'){
+    $voer->spanning = $_POST["bandenspanning"];
+    $voer->maximale_snelheid = 25;
+    $spanning = $voer->spanning / 100 ;
+    $tijd = ($spanning * $voer->maximale_snelheid) / 60;
+    $afstand = $_POST["afstand"] / $tijd + $_POST["vertraging"]; 
+}

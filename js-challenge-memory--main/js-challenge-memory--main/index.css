@@ -1,0 +1,81 @@
+.i{
+    display: inline-block;
+    margin: 10px;
+    margin-right: 0px;
+    font-size: x-large;
+}
+
+
+iframe{
+    margin-top: 0px;
+    margin-left: 50px;
+    position: absolute;
+    height: 730px;
+    width: 960px;
+    border: 5px solid red;
+}
+
+.k{
+    margin-right: 0px;
+    display: inline-block;
+    border: 5px solid white;
+}
+
+body{
+    padding: 15px;
+    display: inline-block;
+    
+}
+
+*{
+    background-color: black;
+    color: white;
+}
+
+.log{
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 5px;
+    align-items: centerx            ;
+    color: black;
+    width: 250px ;
+    background-color: aqua;
+    height: 250px;
+    margin-bottom: 0px;
+}
+
+
+#avatar1, #avatar2{
+    width: 20px;
+    height: 20px;
+}
+
+.images1{
+    width: 960px;
+    height: 720px;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    top: 20px;
+    margin-left: 300px;
+    position: absolute   
+
+}
+
+#image{
+    margin: 50px;
+    border: 5px solid black;
+}
+
+.tegels{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+
+#knop{
+    background-color: gray;
+}
